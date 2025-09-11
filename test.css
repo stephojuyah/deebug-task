@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #0A4D68;
@@ -15,7 +15,7 @@ body {
 }
 
 .skin {
-    width: 70%;
+    width: 60%;
 }
 
 .container {
@@ -33,14 +33,17 @@ body {
 
 .logo-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    line-height: 29px;
+    padding-top: 20px;
+    gap: 0px;
 }
 
-.logo {
-    width: 50px;
-    height: 50px;
+img.logo {
+    width: 90px;
+    height: 70px;
     object-fit: contain;
 }
 
@@ -83,13 +86,18 @@ div.container {
 
 .imagine-badge {
     position: absolute;
-    top: 30px;
-    left: 30px;
-    background: #ffa500;
-    color: #333;
+    text-align: center;
+    top: 55px;
+    left: 100px;
+    width: 280px;
+    height: 54px;
+    line-height: 37px;
+    padding: 30px;
+    background: #FFC500;
+    color: #152727;
     padding: 8px 16px;
-    font-weight: bold;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 20px;
     border-radius: 4px;
 }
 
@@ -104,18 +112,21 @@ div.container {
 .welcome h2 {
     font-size: 36px;
     margin-bottom: 30px;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .welcome-content {
     max-width: 600px;
     margin: 0 auto;
+    padding-bottom: 15px;
 }
 
 .welcome p {
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 1.8;
+    /* margin-bottom: 20px; */
+    margin: 0px 0px 20px 0px;
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 20px;
 }
 
 .highlight {
