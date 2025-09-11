@@ -16,6 +16,7 @@ body {
 
 .skin {
     width: 60%;
+    min-width: 300px;
 }
 
 .container {
@@ -56,7 +57,6 @@ img.logo {
 .hero {
     width: 100%;
     background-color: #08313F;
-    /* padding: 0; */
     position: relative;
 }
 
@@ -79,7 +79,7 @@ div.container {
 
 .student-image {
     width: 100%;
-    height: "auto";
+    height: auto;
     object-fit: cover;
     display: block;
 }
@@ -122,7 +122,6 @@ div.container {
 }
 
 .welcome p {
-    /* margin-bottom: 20px; */
     margin: 0px 0px 20px 0px;
     font-weight: 100;
     font-size: 17px;
@@ -130,7 +129,7 @@ div.container {
 }
 
 .highlight {
-    color: #ffa500;
+    color: #FFC500;
     text-decoration: underline;
 }
 
@@ -145,7 +144,6 @@ div.container {
     gap: 20px;
     align-items: center;
     padding-bottom: 0px;
-    /* margin-bottom: 10px;  */
 }
 
 .expectations-text {
@@ -154,15 +152,13 @@ div.container {
 }
 
 .expectations-image {
-    /* float: right; */
     width: 700px;
     height: 400px;
-    /* height: 50px; */
 }
 
 .expectations h3 {
     font-size: 24px;
-    font-weight: 900;
+    font-weight: 800;
     margin-bottom: 33px;
     color: #351803;
 }
@@ -207,7 +203,7 @@ div.container {
     width: 60%;
     font-family: 'Shantell Sans', cursive;
     text-align: left;
-    /* padding-top: 14px; */
+    color: #121212CC;
     padding-top: 3px;
     margin-top: 15px;
     margin-bottom: 12px;
@@ -262,7 +258,8 @@ div.container {
     flex-direction: row;
     background: #f9f5e8;
     padding: 60px 50px;
-    padding-bottom: 30px;
+    padding-top: 38px;
+    padding-bottom: 28px;
 }
 
 
@@ -282,7 +279,7 @@ div.container {
     font-size: 24px;
     margin-bottom: 15px;
     color: #351803;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .completion p {
@@ -320,13 +317,8 @@ p.thrilled {
 .completion-image {
     display: flex;
     flex-direction: column;
-    /* gap: 40px; */
     width: 50%;
-    /* border: 1px solid red; */
     margin-top: 42px;
-    /* max-width: 250px; */
-    /* height: auto; */
-    /* object-fit: contain; */
 }
 
 .certificate-image1 {
@@ -334,6 +326,7 @@ p.thrilled {
     height: 156px;
     padding-left: 10px;
 }
+
 .certificate-image2 {
     width: 252px;
     height: 157px;
@@ -345,23 +338,36 @@ p.thrilled {
 
 .second-image {
     width: 100%;
+    position: relative;
 }
 
-div.solute {
+.solute {
     position: absolute;
-    top: 20;
-    left: 20;
-    height: 20px;
-    width: 100px;
-    border: 1px solid red;
+    top: 15px;
+    left: 18px;
+    z-index: 10;
 }
 
-img.badge {
+.badge {
     width: 23px;
-    position: absolute;
-    left: 50;
-    top
+    height: 23px;
 }
+
+.certificate-text {
+    position: absolute;
+    top: 41px;      
+    left: 20px;     
+    z-index: 10;
+    color: #121212;    
+}
+
+.certificate-text h2 {
+    font-size: 8.5px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
 /* CTA Section */
 .cta {
     background-color: white;
@@ -395,7 +401,6 @@ img.badge {
     color: white;
     padding-top: 40px;
     padding-bottom: 30px;
-    /* padding: 30px 0; */
     text-align: center;
 }
 
@@ -412,64 +417,444 @@ img.badge {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        padding: 0 15px;
+@media screen and (min-width: 1300px) {
+    .skin {
+        width: 55%;
+        max-width: 1200px;
     }
-    
-    .expectations-content,
-    .completion-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .hero-image {
-        text-align: center;
-    }
-    
-    .student-image {
-        height: 250px;
-    }
-    
-    .imagine-badge {
-        top: 20px;
-        left: 20px;
-        font-size: 12px;
-        padding: 6px 12px;
-    }
-    
-    .download-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .welcome h2 {
+
+    .header h1 {
         font-size: 28px;
     }
-    
-    .header h1 {
-        font-size: 20px;
+
+    .welcome h2 {
+        font-size: 42px;
     }
-    
-    .logo-section {
-        flex-direction: column;
-        gap: 10px;
+
+    .welcome p {
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .expectations h3 {
+        font-size: 28px;
+    }
+
+    .completion h3 {
+        font-size: 28px;
+    }
+
+    .certificate-image1 {
+        width: 300px;
+        height: 192px;
+    }
+
+    .certificate-image2 {
+        width: 310px;
+        height: 194px;
+    }
+
+    .badge {
+        width: 28px;
+        height: 28px;
+    }
+
+    .certificate-text h2 {
+        font-size: 10px;
     }
 }
 
-@media (max-width: 480px) {
-    .cta-button {
-        padding: 12px 30px;
-        font-size: 16px;
+/* Medium Screens (768px to 1199px) */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+    .skin {
+        width: 70%;
     }
-    
-    .welcome-content,
-    .expectations h3,
-    .completion h3 {
+
+    .expectations-content {
+        gap: 15px;
+    }
+
+    .expectations-text {
+        width: 45%;
+    }
+
+    .expectations-image {
+        width: 55%;
+        height: auto;
+    }
+
+    .phones-mockup {
+        height: 350px;
+    }
+}
+
+/* Small Screens (480px to 767px) */
+@media screen and (max-width: 767px) {
+    .skin {
+        width: 95%;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Header adjustments */
+    .header {
+        padding: 15px 0;
+    }
+
+    .logo-section {
+        padding-top: 10px;
+    }
+
+    img.logo {
+        width: 70px;
+        height: 55px;
+    }
+
+    .header h1 {
         font-size: 20px;
     }
-    
-    .store-button {
+
+    /* Hero section adjustments */
+    .imagine-badge {
+        top: 30px;
+        left: 20px;
+        width: 200px;
         height: 40px;
+        font-size: 14px;
+        padding: 5px 10px;
+        line-height: 30px;
+    }
+
+    /* Welcome section adjustments */
+    .welcome {
+        padding: 25px 20px;
+    }
+
+    .welcome h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .welcome p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    /* Expectations section adjustments */
+    .expectations {
+        padding: 20px 20px;
+    }
+
+    .expectations-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .expectations-text {
+        width: 100%;
+    }
+
+    .expectations-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .expectations h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .expectations li {
+        width: 100%;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .phones-mockup {
+        height: 280px;
+    }
+
+    /* App download section adjustments */
+    .app-download {
+        flex-direction: column;
+        padding: 20px 20px;
+        gap: 15px;
+    }
+
+    .app-download p {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    .download-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .store-button {
+        height: 50px;
+        margin-top: 0;
+    }
+
+    /* Schedule section adjustments */
+    .schedule {
+        padding: 30px 20px;
+        padding-bottom: 40px;
+    }
+
+    .schedule h3 {
+        font-size: 16px;
+    }
+
+    .schedule p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    /* Completion section adjustments */
+    .completion {
+        padding: 30px 20px;
+    }
+
+    .completion-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .completion-text {
+        width: 100%;
+    }
+
+    .completion h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .completion p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .completion li {
+        font-size: 15px;
+        line-height: 22px;
+        padding-left: 25px;
+    }
+
+    .completion-image {
+        width: 100%;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .certificate-image1 {
+        width: 200px;
+        height: 128px;
+        padding-left: 0;
+    }
+
+    .certificate-image2 {
+        width: 207px;
+        height: 129px;
+    }
+
+    .solute {
+        top: 12px;
+        left: 15px;
+    }
+
+    .badge {
+        width: 18px;
+        height: 18px;
+    }
+
+    .certificate-text {
+        top: 33px;
+        left: 17px;
+    }
+
+    .certificate-text h2 {
+        font-size: 7px;
+    }
+
+    /* CTA section adjustments */
+    .cta {
+        padding: 20px 0;
+    }
+
+    .cta-button {
+        height: 45px;
+        padding: 12px 30px;
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+    /* Footer adjustments */
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .footer p {
+        font-size: 15px;
+    }
+}
+
+/* Extra Small Screens (up to 479px) */
+@media screen and (max-width: 479px) {
+    .skin {
+        width: 100%;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    /* Header adjustments */
+    img.logo {
+        width: 60px;
+        height: 45px;
+    }
+
+    .header h1 {
+        font-size: 18px;
+    }
+
+    /* Hero section adjustments */
+    .imagine-badge {
+        top: 20px;
+        left: 10px;
+        width: 160px;
+        height: 35px;
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    /* Welcome section adjustments */
+    .welcome {
+        padding: 20px 15px;
+    }
+
+    .welcome h2 {
+        font-size: 24px;
+    }
+
+    .welcome p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* Expectations section adjustments */
+    .expectations {
+        padding: 15px 15px;
+    }
+
+    .expectations h3 {
+        font-size: 18px;
+    }
+
+    .expectations li {
+        font-size: 14px;
+        padding-left: 20px;
+    }
+
+    .phones-mockup {
+        height: 220px;
+    }
+
+    /* App download section adjustments */
+    .app-download {
+        padding: 15px 15px;
+    }
+
+    .app-download p {
+        font-size: 13px;
+    }
+
+    .store-button {
+        height: 45px;
+    }
+
+    /* Schedule section adjustments */
+    .schedule {
+        padding: 25px 15px;
+        padding-bottom: 35px;
+    }
+
+    .schedule h3 {
+        font-size: 15px;
+    }
+
+    .schedule p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* Completion section adjustments */
+    .completion {
+        padding: 25px 15px;
+    }
+
+    .completion h3 {
+        font-size: 18px;
+    }
+
+    .completion p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .completion li {
+        font-size: 14px;
+        line-height: 20px;
+        padding-left: 20px;
+    }
+
+    .certificate-image1 {
+        width: 160px;
+        height: 102px;
+    }
+
+    .certificate-image2 {
+        width: 165px;
+        height: 103px;
+    }
+
+    .solute {
+        top: 10px;
+        left: 12px;
+    }
+
+    .badge {
+        width: 15px;
+        height: 15px;
+    }
+
+    .certificate-text {
+        top: 27px;
+        left: 14px;
+    }
+
+    .certificate-text h2 {
+        font-size: 6px;
+    }
+
+    /* CTA section adjustments */
+    .cta-button {
+        height: 40px;
+        padding: 10px 25px;
+        padding-top: 8px;
+        font-size: 14px;
+    }
+
+    /* Footer adjustments */
+    .footer p {
+        font-size: 14px;
     }
 }
