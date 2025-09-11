@@ -137,31 +137,33 @@ div.container {
 /* Expectations Section */
 .expectations {
     background: #FDF7E2F2;
-    padding: 40px 40px;
+    padding: 0px 40px;
 }
 
 .expectations-content {
     display: flex;
-    gap: 70px;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* gap: 40px */
+    gap: 20px;
     align-items: center;
-    margin-bottom: 40px; */
+    padding-bottom: 0px;
+    /* margin-bottom: 10px;  */
 }
 
 .expectations-text {
-    width: 50%;
+    width: 350px;
+    line-height: 20px;
 }
 
-/* .expectations-image {
-    width: 50%;
-    height: 50px;
-} */
+.expectations-image {
+    /* float: right; */
+    width: 700px;
+    height: 400px;
+    /* height: 50px; */
+}
 
 .expectations h3 {
     font-size: 24px;
-    margin-bottom: 20px;
+    font-weight: 900;
+    margin-bottom: 33px;
     color: #333;
 }
 
@@ -171,34 +173,34 @@ div.container {
 }
 
 .expectations li {
-    margin-bottom: 15px;
+    width: 330px;
+    margin-bottom: 5px;
     padding-left: 20px;
     position: relative;
 }
 
 .expectations li::before {
     content: "•";
-    color: #ffa500;
+    color: black;
     font-size: 18px;
     position: absolute;
     left: 0;
 }
 
 .phones-mockup {
-    padding-top: 30px;
+    padding-top: 0px;
     width: 100%;
-    max-width: 300px;
-    height: 100%;
+    max-width: 600px;
+    height: 460px;
     object-fit: contain;
 }
 
 .app-download {
     display: flex;
     background-color: white;
-    gap: 20px;
+    gap: 30px;
     text-align: center;
-    padding: 10px 80px;
-    border-top: 1px solid #ddd;
+    padding: 5px 60px;
 }
 
 .app-download p {
@@ -207,15 +209,17 @@ div.container {
     text-align: left;
     padding-top: 14px;
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 18px;
 }
 
 .download-buttons {
-    width: ;
+    width: 40%;
 }
 
 .store-button {
-    height: 90px;
+    height: 70px;
     width: auto;
     cursor: pointer;
     transition: transform 0.3s ease;
