@@ -207,8 +207,10 @@ div.container {
     width: 60%;
     font-family: 'Shantell Sans', cursive;
     text-align: left;
-    padding-top: 14px;
-    margin-bottom: 20px;
+    /* padding-top: 14px; */
+    padding-top: 3px;
+    margin-top: 15px;
+    margin-bottom: 12px;
     font-size: 15px;
     font-weight: 900;
     line-height: 18px;
@@ -220,6 +222,7 @@ div.container {
 
 .store-button {
     height: 70px;
+    margin-top: 5px;;
     width: auto;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -233,20 +236,24 @@ div.container {
 .schedule {
     background-color: #08313F;
     color: white;
-    padding: 40px 90px;
+    padding: 40px 70px;
+    padding-top: 15px;
+    padding-bottom: 90px;
     text-align: center;
 }
 
 .schedule h3 {
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 0px;
     color: white;
 }
 
 .schedule p {
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 1.8;
+    margin-bottom: 0px;
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 25px;
 }
 
 /* Completion Section */
