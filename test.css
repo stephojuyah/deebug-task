@@ -295,7 +295,8 @@ p.thrilled {
 .completion ul {
     list-style-position: inside;
     padding: 0;
-    margin: 20px 0;
+    /* margin: 20px 0; */
+    margin-bottom: 23px;
 }
 
 .completion li {
@@ -306,13 +307,13 @@ p.thrilled {
 }
 
 /* .completion li::before {
-    content: "•";
-    color: black;
+    /* content: "•"; */
+    /* color: black;
     padding-left: 20px;
-    font-size: 18px;
+    font-size: 1px;
     position: absolute;
     left: 0;
-} */
+} */ 
 
 .completion-image {
     display: flex;
