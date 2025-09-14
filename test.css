@@ -178,7 +178,7 @@ div.container {
 .expectations li::before {
     content: "•";
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     position: absolute;
     left: 0;
 }
@@ -293,26 +293,26 @@ p.thrilled {
 }
 
 .completion ul {
-    list-style: none;
+    list-style-position: inside;
     padding: 0;
     margin: 20px 0;
 }
 
 .completion li {
     margin-bottom: 0px;
-    padding-left: 40px;
+    padding-left: 20px;
     position: relative;
     line-height: 20px;
 }
 
-.completion li::before {
+/* .completion li::before {
     content: "•";
     color: black;
     padding-left: 20px;
     font-size: 18px;
     position: absolute;
     left: 0;
-}
+} */
 
 .completion-image {
     display: flex;
@@ -486,6 +486,8 @@ p.thrilled {
     .phones-mockup {
         height: 350px;
     }
+
+    
 }
 
 /* Small Screens (480px to 767px) */
@@ -493,20 +495,20 @@ p.thrilled {
     .skin {
         width: 95%;
     }
-
+    
     .container {
         padding: 0 15px;
     }
-
+    
     /* Header adjustments */
     .header {
         padding: 15px 0;
     }
-
+    
     .logo-section {
         padding-top: 10px;
     }
-
+    
     img.logo {
         width: 70px;
         height: 55px;
@@ -526,7 +528,7 @@ p.thrilled {
         padding: 5px 10px;
         line-height: 30px;
     }
-
+    
     /* Welcome section adjustments */
     .welcome {
         padding: 25px 20px;
@@ -536,22 +538,22 @@ p.thrilled {
         font-size: 28px;
         margin-bottom: 20px;
     }
-
+    
     .welcome p {
         font-size: 15px;
         line-height: 22px;
     }
-
+    
     /* Expectations section adjustments */
     .expectations {
         padding: 20px 20px;
     }
-
+    
     .expectations-content {
         flex-direction: column;
         gap: 20px;
     }
-
+    
     .expectations-text {
         width: 100%;
     }
@@ -566,13 +568,13 @@ p.thrilled {
         margin-bottom: 20px;
         text-align: center;
     }
-
+    
     .expectations li {
         width: 100%;
         font-size: 15px;
         margin-bottom: 10px;
     }
-
+    
     .phones-mockup {
         height: 280px;
     }
@@ -583,54 +585,54 @@ p.thrilled {
         padding: 20px 20px;
         gap: 15px;
     }
-
+    
     .app-download p {
         width: 100%;
         text-align: center;
         font-size: 14px;
         margin-top: 0;
     }
-
+    
     .download-buttons {
         width: 100%;
         display: flex;
         justify-content: center;
     }
-
+    
     .store-button {
         height: 50px;
         margin-top: 0;
     }
-
+    
     /* Schedule section adjustments */
     .schedule {
         padding: 30px 20px;
         padding-bottom: 40px;
     }
-
+    
     .schedule h3 {
         font-size: 16px;
     }
-
+    
     .schedule p {
         font-size: 15px;
         line-height: 22px;
     }
-
+    
     /* Completion section adjustments */
     .completion {
         padding: 30px 20px;
     }
-
+    
     .completion-content {
         flex-direction: column;
         gap: 25px;
     }
-
+    
     .completion-text {
         width: 100%;
     }
-
+    
     .completion h3 {
         font-size: 20px;
         text-align: center;
@@ -640,13 +642,13 @@ p.thrilled {
         font-size: 15px;
         line-height: 22px;
     }
-
+    
     .completion li {
         font-size: 15px;
         line-height: 22px;
         padding-left: 25px;
     }
-
+    
     .completion-image {
         width: 100%;
         margin-top: 20px;
@@ -658,7 +660,7 @@ p.thrilled {
         height: 128px;
         padding-left: 0;
     }
-
+    
     .certificate-image2 {
         width: 207px;
         height: 129px;
@@ -668,17 +670,17 @@ p.thrilled {
         top: 12px;
         left: 15px;
     }
-
+    
     .badge {
         width: 18px;
         height: 18px;
     }
-
+    
     .certificate-text {
         top: 33px;
         left: 17px;
     }
-
+    
     .certificate-text h2 {
         font-size: 7px;
     }
